@@ -1,6 +1,7 @@
 streamlit
 pandas
 langchain
+langchain-core
 langchain_groq
 langchain_community
 langchain_cohere
