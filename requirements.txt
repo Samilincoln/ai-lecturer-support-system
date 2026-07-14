@@ -5,6 +5,7 @@ langchain_core
 langchain_groq
 langchain_community
 langchain_cohere
+langchain-text-splitters
 langchain_openai
 langsmith
 faiss-cpu
