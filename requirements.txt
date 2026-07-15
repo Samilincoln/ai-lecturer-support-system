@@ -10,3 +10,4 @@ langchain-text-splitters
 langchain_openai
 langsmith
 faiss-cpu
+openpyxl

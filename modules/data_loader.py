@@ -16,7 +16,7 @@ def load_excel_data(file_path):
         if filename.endswith('.csv'):
             df = pd.read_csv(file_path)
         elif filename.endswith(('.xlsx', '.xls')):
-            df = pd.read_excel(file_path)
+            df = pd.read_excel(file_path, engine="openpyxl")
         else:
             raise ValueError("Unsupported file format. Use .csv, .xlsx, or .xls")
 
