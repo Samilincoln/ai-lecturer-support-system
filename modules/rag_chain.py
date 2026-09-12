@@ -20,11 +20,11 @@ def create_qa_chain(vectorstore):
         # Setup retriever
         retriever = vectorstore.as_retriever(
             search_type="similarity",
-            search_kwargs={"k": 3}
+            search_kwargs={"k": 5}
         )
 
         # Load language model
-        llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0)
+        llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
 
         # System prompt for the LLM
         system_prompt = (
